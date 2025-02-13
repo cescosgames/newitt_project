@@ -1,0 +1,17 @@
+@import "tailwindcss";
+
+* {
+  --color-dark: #263238;
+  --color-light: #F0F4F8;
+  --color-medium-dark: #546e7a;
+  --color-medium-light: #b0bec5;
+  --color-medium: #78909c;
+}
+
+body {
+  background-color: var(--color-dark);
+  color: var(--color-light);
+
+  font-family: "Doto";
+  font-weight: 300;
+}
