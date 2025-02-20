@@ -10,18 +10,15 @@
 
 * {
   box-sizing: border-box;
+  font-family: 'Doto', sans-serif;
 }
 
 body {
   background-color: var(--color-coolgray);
   color: var(--color-coolwhite);
 
-  font-family: "Doto";
   font-weight: 300;
 }
-
-
-
 
 
 /* some utility classes below */

@@ -103,8 +103,8 @@ function App() {
       <div className='flex'>
         {/* our is welcome to be shown if no lanes are open */}
         {(!isWelcome) ? " " : <>
-          <div className='mx-auto absolute inset-0 flex flex-col gap-5 items-center justify-center w-[50vw] h-[50vw]'>
-            <span className='w-[75%] text-center text-lg text-coolwhite cursor-default'> Welcome to Newitt! Get Started by adding a subreddit using the + icon in the top left or select a starter pack below </span>
+          <div className='mx-auto my-auto absolute inset-0 flex flex-col gap-5 items-center justify-center w-[50vw] h-[50vw]'>
+            <span className='w-[80%] text-center text-lg text-coolwhite cursor-default'> Welcome to Newitt! Get the freshest posts by adding a subreddit using the + icon in the top left or select a starter pack below!</span>
             <div className='grid grid-cols-2 grid-rows-2 gap-5'>
               <button onClick={sportsStarterPack} className='z-10 border-2 rounded-md p-2 border-mcoolmid cursor-pointer transition hover:bg-mcoolwhite hover:text-coolgray hover:font-bold'>sports starter pack</button>
               <button onClick={gamedevStarterPack} className='z-10 border-2 rounded-md p-2 border-mcoolmid cursor-pointer transition hover:bg-mcoolwhite hover:text-coolgray hover:font-bold'>game dev starter pack</button>
