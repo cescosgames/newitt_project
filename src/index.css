@@ -40,3 +40,7 @@ body {
 .scrollbar-hidden::-webkit-scrollbar {
   display: none; /* Webkit browsers */
 }
+
+.bgOpacity {
+  background-color: rgba(0,0,0,0.5);
+}
