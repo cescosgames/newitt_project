@@ -22,9 +22,9 @@ const AddModal = ({ onClose, addSub, isOpen }) => {
         </button>
         <div className='flex flex-col gap-5 items-center justify-center'>
           {/* the input field */}
-          <input type="text" placeholder='enter subreddit name' className='border border-coolwhite w-full rounded-md p-2 text-coolwhite'
-          // our onchange function will update our subtitle every change
-            onChange={(event => setSubTitle(event.target.value))}
+          <input type="text" placeholder='enter subreddit name' className='focus:outline-none border border-coolwhite w-full rounded-md p-2 text-coolwhite'
+          // our onchange function will update our subtitle every change, using .replace to get rid of spaces
+            onChange={(event => setSubTitle(event.target.value.replace(/\s/g,'')))}
           />
           {/* the submit button */}
           <button onClick={addSubredditFunc} className='border w-[75%] rounded-md border-coolwhite transition hover:bg-coolwhite hover:text-coolgray cursor-pointer'>add subreddit</button>

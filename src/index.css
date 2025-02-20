@@ -8,6 +8,10 @@
   --color-mcoolmid: #78909c;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   background-color: var(--color-coolgray);
   color: var(--color-coolwhite);
