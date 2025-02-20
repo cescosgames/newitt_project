@@ -14,11 +14,15 @@ const AddLane = ({ onClickAdd }) => {
     <>
     {/* the + button */}
         <div className='mt-1'>
-            <button onClick={toggleModal} className='cursor-pointer text-2xl transition hover:scale-110 border-2 border-mcoolgray rounded-md w-10 aspect-square'>+</button>
+            <button onClick={toggleModal} className='cursor-pointer text-2xl transition hover:scale-110 border-2 border-mcoolgray rounded-md w-10 aspect-square'
+                onKeyDown={(event) => {
+                    event.preventDefault();
+                }}
+            >+</button>
         </div>
 
         {/* our modal is set here and rendered open or close from our state. Inside the modal, we return the modal or null depending on the state */}
-        <AddModal addSub={onClickAdd} isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
+        <AddModal toggleModal={toggleModal} addSub={onClickAdd} isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
         {/* also note we are passing our onClickAdd prop function from our main app */}
     </>
   )

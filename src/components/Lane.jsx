@@ -20,7 +20,7 @@ const Lane = ({ subreddit, deleteLane }) => {
     // wrap the response in a try catch to try adn catch errors
     try {
       // fetch our requested subreddit, limited to 3 newest posts for now
-      const response = await fetch(`https://www.reddit.com/r/${subreddit}/new.json?limit=3`);
+      const response = await fetch(`https://www.reddit.com/r/${subreddit}/new.json?limit=10`);
       // had to add response.redirected because for some reason I am being redirected now (302 error instead of 404)
     if (!response.ok || response.redirected) {
         setError(true);
