@@ -58,7 +58,7 @@ const AddModal = ({ onClose, addSub, isOpen, toggleModal }) => {
   
   return (
     <div className="fixed inset-0 flex items-center justify-center bgOpacity w-[100vw] h-[100vh] z-10">
-      <div className="bg-mcoolmid p-6 rounded-lg shadow-lg max-w-sm w-full relative">
+      <div className="bg-coolgray p-6 rounded-lg shadow-lg max-w-sm w-full relative border-2 border-mcoolmid">
         {/* the close button */}
         <button onClick={onClose} className="absolute text-2xl top-2 right-2 text-coolwhite hover:text-coolgray cursor-pointer transition hover:scale-130">
           x
