@@ -73,7 +73,7 @@ const Lane = ({ subreddit, deleteLane }) => {
 
   // return our lane with the header and posts
   return (
-    <div className='relative border-2 border-mcoolgray m-1 w-xs min-w-xs max-w-xs h-[85vh] rounded-md flex flex-col space-y-0'>
+    <div className='relative border-2 border-mcoolgray sm:m-1 m-2 sm:w-xs sm:min-w-xs sm:max-w-xs w-[96vw] sm:h-[85vh] h-[20vh] rounded-md flex flex-col space-y-0'>
       
       <LaneHeader subreddit={subreddit} onClickRefresh={refreshSelf} onClickDelete={deleteLane} />  
       {/*  onClickDelete={}/>    */}

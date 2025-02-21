@@ -85,12 +85,12 @@ function App() {
     ];
     addStarterPack(sportsLanes);
   }
-  const photographyStarterPack = () => {
+  const programmingStarterPack = () => {
     const sportsLanes = [
-      {subreddit: "photojournalism"},
-      {subreddit: "portraitphotos"},
-      {subreddit: "photoessay"},
-      {subreddit: "photobooks"},
+      {subreddit: "webdev"},
+      {subreddit: "javascript"},
+      {subreddit: "reactjs"},
+      {subreddit: "Python"},
     ];
     addStarterPack(sportsLanes);
   }
@@ -101,7 +101,7 @@ function App() {
       <Navbar deleteAllLanes={removeAllLanes}/>
       <div className='spacer'></div>
       {/* the lane holder, in a flex container for L->R displaying */}
-      <div className='flex'>
+      <div className='flex flex-col sm:flex-row'>
         {/* our is welcome to be shown if no lanes are open */}
         {(!isWelcome) ? " " : <>
           <div className='mx-auto my-auto absolute inset-0 flex flex-col gap-5 items-center justify-center w-[50vw] h-[50vw]'>
@@ -111,7 +111,7 @@ function App() {
             <div className='grid grid-cols-3 grid-rows-3 gap-5 max-w-md min-w-xs'>
               <button onClick={sportsStarterPack} className='fade-in col-span-1 row-span-1 z-10 border-2 rounded-md p-2 border-mcoolmid cursor-pointer transition hover:bg-mcoolwhite hover:text-coolgray hover:font-bold'>sports starter pack</button>
               <button onClick={gamedevStarterPack} className='fade-in col-span-2 row-span-1 z-10 border-2 rounded-md p-2 border-mcoolmid cursor-pointer transition hover:bg-mcoolwhite hover:text-coolgray hover:font-bold'>game dev starter pack</button>
-              <button onClick={photographyStarterPack} className='fade-in col-span-2 row-span-1 z-10 border-2 rounded-md p-2 border-mcoolmid cursor-pointer transition hover:bg-mcoolwhite hover:text-coolgray hover:font-bold'>photography starter pack</button>
+              <button onClick={programmingStarterPack} className='fade-in col-span-2 row-span-1 z-10 border-2 rounded-md p-2 border-mcoolmid cursor-pointer transition hover:bg-mcoolwhite hover:text-coolgray hover:font-bold'>programming starter pack</button>
             </div>
           </div>
         </>}

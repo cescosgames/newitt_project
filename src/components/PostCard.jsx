@@ -1,13 +1,19 @@
 import React from 'react'
 
 const PostCard = ({ title, upvotes, author, comments, url }) => {
+
+    console.log(typeof(url));
+
+    
+
   return (
     <div className='h-auto w-auto m-1 text-mcoolwhite transition hover:scale-101 group'>
-        <div className="relative flex flex-col bg-coolgray border-mcoolgray border-2 rounded-lg w-full">
+        <div className="relative flex flex-col bg-coolgray border-mcoolgray border-2 rounded-lg w-full cursor-pointer" onClick={() => window.open((url), '_blank')}>
             <div className="p-4">
                 <div className="flex items-center mb-2">
                     <h6 className="text-mcoolwhite text-md font-semibold truncate text-ellipsis transition-all group-hover:text-coolwhite group-hover:overflow-visible group-hover:whitespace-normal">
-                        <a  target='_blank' href={url} className='cursor-pointer'>{title}</a>
+                        {/* <a target='_blank' href={url} className='cursor-pointer'>{title}</a> */}
+                        {title}
                     </h6>
 
                     {/*  upvotes */}
