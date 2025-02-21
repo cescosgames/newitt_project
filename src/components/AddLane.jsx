@@ -14,7 +14,7 @@ const AddLane = ({ onClickAdd }) => {
     <>
     {/* the + button */}
         <div className='mt-1 ml-2'>
-            <button onClick={toggleModal} className='cursor-pointer text-2xl transition hover:scale-110 border-2 border-mcoolgray rounded-md w-10 aspect-square'
+            <button onClick={toggleModal} className='cursor-pointer text-2xl transition hover:scale-101 sm:hover:scale-110 border-2 border-mcoolgray rounded-md sm:w-10 sm:aspect-square w-[96vw]'
                 onKeyDown={(event) => {
                     event.preventDefault();
                 }}
