@@ -4,7 +4,7 @@ This is my minimalist reddit client called Newitt based on the mockup and [proje
 a predefined group of subreddits or individually selected subreddits into individual, responsive and dynamic lanes. 
 <br>
 <br>
-Live demo coming soon!
+Live Demo: https://newitt-project.pages.dev/ 
 
 ## How it was made:
 
